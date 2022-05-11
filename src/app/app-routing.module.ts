@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'lanches',
+    loadChildren: () => import('./lanches/lanches.module').then( m => m.LanchesPageModule)
+  },
 ];
 
 @NgModule({
