@@ -6,7 +6,7 @@
 
 <ion-content>
   <ion-list>
-    <ion-item button (click)="abrirModal()">
+    <ion-item button (click)="abrirModal()" value="{{lanches}}">
       <ion-label>{{lanches[0].nome}}: R$ {{lanches[0].valor}}</ion-label>
       <ion-img src="assets/img/xissalada.jpg"></ion-img>
     </ion-item>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { LanchesPage } from '../lanches/lanches.page';
 
 @Component({
   selector: 'app-informacoes-modal',
@@ -7,8 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InformacoesModalComponent implements OnInit {
 
-  constructor() { }
+
+  lanches = LanchesPage;
+  
+  constructor(private modalController: ModalController) { }
 
   ngOnInit() {}
 
+  fecharModal() {
+    this.modalController.dismiss();
+  }
 }

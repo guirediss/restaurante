@@ -22,7 +22,7 @@ export class LanchesPage implements OnInit {
     await modal.present();
   }
 
-  lanches = [
+   public lanches = [
     {
       nome: 'X-Salada',
       valor: 20.00,
