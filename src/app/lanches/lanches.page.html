@@ -6,30 +6,36 @@
 
 <ion-content>
   <ion-list>
-    <ion-item>
-      <ion-label>X-Salada: R$ 20,00</ion-label>
+    <ion-item button (click)="abrirModal()">
+      <ion-label>{{lanches[0].nome}}: R$ {{lanches[0].valor}}</ion-label>
       <ion-img src="assets/img/xissalada.jpg"></ion-img>
     </ion-item>
 
-    <ion-item>
-      <ion-label>Cachorro Quente: R$ 15,00</ion-label>
+    <ion-item button (click)="abrirModal()">
+      <ion-label>{{lanches[1].nome}}: R$ {{lanches[1].valor}}</ion-label>
       <ion-img src="assets/img/cachorroquente.jpg"></ion-img>
     </ion-item>
 
-    <ion-item>
-      <ion-label>Pizza: R$ 35,00</ion-label>
+    <ion-item button (click)="abrirModal()">
+      <ion-label>{{lanches[2].nome}}: R$ {{lanches[2].valor}}</ion-label>
       <ion-img src="assets/img/pizza.jpeg"></ion-img>
     </ion-item>
 
-    <ion-item>
-      <ion-label>Calzone: R$ 10,00</ion-label>
+    <ion-item button (click)="abrirModal()">
+      <ion-label>{{lanches[3].nome}}: R$ {{lanches[3].valor}}</ion-label>
       <ion-img src="assets/img/calzone.jpg"></ion-img>
     </ion-item>
 
-    <ion-item>
-      <ion-label>Pastel: R$ 10,00</ion-label>
+    <ion-item button (click)="abrirModal()">
+      <ion-label>{{lanches[4].nome}}: R$ {{lanches[4].valor}}</ion-label>
       <ion-img src="assets/img/pastel.jpeg"></ion-img>
     </ion-item>
   </ion-list>
+
+  <ion-button color="danger" href="/home">
+    <ion-icon name="arrow-undo-outline">
+    </ion-icon>
+    Voltar
+  </ion-button>
   
 </ion-content>
