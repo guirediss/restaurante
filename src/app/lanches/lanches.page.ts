@@ -12,4 +12,26 @@ export class LanchesPage implements OnInit {
   ngOnInit() {
   }
 
+  lanches = [
+    {
+      nome: 'X-Salada',
+      valor: 20.00
+    },
+    {
+      nome: 'Cachorro Quente',
+      valor: 15.00
+    },
+    {
+      nome: 'Pizza',
+      valor: 35.00
+    },
+    {
+      nome: 'Calzone',
+      valor: 10.00
+    },
+    {
+      nome: 'Pastel',
+      valor: 10.00
+    }
+  ];
 }
