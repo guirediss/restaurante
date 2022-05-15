@@ -28,52 +28,52 @@ export class PratosPage implements OnInit {
   }
   public pratos = [
    {
-     nome: 'X-Salada',
-     valor: 20.00,
-     ingredientes: 'Pão, Alface, Hambúrguer, Tomate, Maionese, Ketchup, Mostarda, Queijo'
-   },
-   {
-     nome: 'Cachorro Quente',
+     nome: 'Batata Frita',
      valor: 15.00,
-     ingredientes: 'Pão, Salsicha, Cebola, Tomate, Milho, Ervilha, Batata Palha'
+     ingredientes: '500g de batata'
    },
    {
-     nome: 'Pizza',
-     valor: 35.00,
-     ingredientes: '',
-     sabores: '4Queijos, Calabresa, Frango'
+     nome: 'Polenta Frita',
+     valor: 15.00,
+     ingredientes: '500g de polenta'
    },
    {
-     nome: 'Calzone',
-     valor: 10.00,
-     ingredientes: '',
-     sabores: '4Queijos, Calabresa, Frango'
+     nome: 'Prato feito Carne',
+     valor: 20.00,
+     ingredientes: 'Arroz, Batata Frita, Feijão, Bife de Carne',
+     sabores: ''
    },
    {
-     nome: 'Pastel',
-     valor: 10.00,
-     ingredientes: '',
-     sabores: '4Queijos, Calabresa, Frango'
+     nome: 'Prato feito Frango',
+     valor: 20.00,
+     ingredientes: 'Arroz, Salada, Feijão, Bife de Frango',
+     sabores: ''
+   },
+   {
+     nome: 'Prato feito Peixe',
+     valor: 20.00,
+     ingredientes: 'Arroz, Batata Frita, Salada, Peixe a milanesa',
+     sabores: ''
    }
   ];
 
-  public getXis() {
+  public getBatata() {
     return this.retorno = this.lancheClicado(this.pratos[0]);
   }
 
-  public getCachorro() {
+  public getPolenta() {
     return this.retorno = this.lancheClicado(this.pratos[1]);
   }
 
-  public getPizza() {
+  public getPratoCarne() {
     return this.retorno = this.lancheClicado(this.pratos[2]);
   }
 
-  public getCalzone() {
+  public getPratoFrango() {
     return this.retorno = this.lancheClicado(this.pratos[3]);
   }
 
-  public getPastel() {
+  public getPratoPeixe() {
     return this.retorno = this.lancheClicado(this.pratos[4]);
   }
 
