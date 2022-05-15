@@ -20,4 +20,11 @@ export class HomePage {
     return await modal.present();
   }
 
+  public pratodia = [
+    {
+      pratoEntrada: 'Polenta',
+      
+    }
+  ]
+
 }

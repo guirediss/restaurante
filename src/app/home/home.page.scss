@@ -1,11 +1,12 @@
 #container {
   text-align: center;
-
+  overflow: hidden;
   position: absolute;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
+  display: flex;
 }
 
 #container strong {
@@ -27,19 +28,30 @@
 }
 
 ion-button {
-  height: 150px;
-  width: 150px;
+  height: 82px;
+  width: 82px;
 }
 
 #pratoBtn {
-  height: 50px;
-  width: 350px;
-}
-
-ion-card {
-  border: 1px, solid, red;
+  height: 35px;
+  width: 300px;
 }
 
 #card { 
   text-align: center;
 }
+
+
+#ofertaImg {
+  width: 20%;
+  margin: auto;
+  display: block;
+}
+
+h1{
+  position: relative;
+  text-align: center;
+  top: 50px
+}
+
+

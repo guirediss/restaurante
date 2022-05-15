@@ -4,22 +4,38 @@
       <b>Bom Gosto</b>
     </ion-title>
   </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-
-  <div id="container">
-      <ion-button href="/lanches"><ion-img src="assets/img/lanches.png"></ion-img></ion-button>
-      <ion-button href="/pratos"><ion-img src="assets/img/pratos.png"></ion-img></ion-button>
-      <ion-button href="/sobremesas"><ion-img src="assets/img/sobremes.png"></ion-img></ion-button>
-      <ion-button href="/bebidas"><ion-img src="assets/img/bebidas.png"></ion-img></ion-button>
-  </div>
 
   <div id="card">
     <ion-card>
-      <ion-label>Prato do Dia</ion-label>
+      <ion-img id="ofertaImg" src="assets/img/oferta.png"></ion-img>
+      <strong>Prato do Dia</strong>
       <h3>OFERTA 25 R$</h3>
       <ion-button id="pratoBtn" color="danger" (click)="abrirModal()">Ver Detalhes</ion-button>
     </ion-card>
   </div>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <h1>Categorias</h1>
+  <div id="container">
+    <div>
+      <ion-label>Lanches</ion-label>
+      <ion-button href="/lanches"><ion-img src="assets/img/lanches.png"></ion-img></ion-button>
+    </div>
+    <div>
+      <ion-label>Pratos</ion-label>
+      <ion-button href="/pratos"><ion-img src="assets/img/pratos.png"></ion-img></ion-button>
+    </div>
+    <div>
+      <p style="position: relative; top: -2px; color: black;">Sobremesas</p>
+      <ion-button style="position: relative; top: -4px;" href="/sobremesas"><ion-img src="assets/img/sobremes.png"></ion-img></ion-button>
+    </div>
+    <div>
+      <ion-label>Bebidas</ion-label>
+      <ion-button href="/bebidas"><ion-img src="assets/img/bebidas.png"></ion-img></ion-button>
+    </div>
+    
+  </div>
+  
+
 </ion-content>
