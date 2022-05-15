@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { LanchesPage } from '../lanches/lanches.page';
 
 @Component({
   selector: 'app-informacoes-modal',

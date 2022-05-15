@@ -1,3 +1,34 @@
-<p>
-  pratodia works!
-</p>
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="danger">Oferta</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="danger" (click)="fecharModal()">Fechar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <br>
+    <h4>Prato do Dia, apenas 25 Reais!</h4>
+    <br><br>
+    <ion-list>
+      <ion-item>
+        <ion-label>Prato de Entrada: {{pratoDia[0].pratoEntrada}}</ion-label>
+        <ion-img src="assets/img/batata.jpg"></ion-img>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Prato: {{pratoDia[0].prato}}</ion-label>
+        <ion-img src="assets/img/peixe.jpg"></ion-img>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Sobremesa: {{pratoDia[0].sobremesa}}</ion-label>
+        <ion-img src="assets/img/sorvetemorango.jpg"></ion-img>
+      </ion-item>
+  
+    </ion-list>
+  </div>
+</ion-content>
+

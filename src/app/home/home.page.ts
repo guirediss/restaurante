@@ -10,21 +10,25 @@ import { PratodiaComponent } from '../pratodia/pratodia.component';
 })
 export class HomePage {
 
+  public pratoDia = [
+    {
+      pratoEntrada: 'Polenta',
+      prato: 'Prato Feito Peixe',
+      sobremesa: 'Sorvete'    
+    }
+  ];
+  
   constructor(private modalController: ModalController) {}
 
   async abrirModal() {
     const modal = await this.modalController.create({
       component: PratodiaComponent,
+      componentProps: {
+        pratoDia: this.pratoDia
+      }
     });
 
     return await modal.present();
   }
-
-  public pratodia = [
-    {
-      pratoEntrada: 'Polenta',
-      
-    }
-  ]
 
 }

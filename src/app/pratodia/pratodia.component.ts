@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-pratodia',
@@ -6,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pratodia.component.scss'],
 })
 export class PratodiaComponent implements OnInit {
+  pratoDia;
+  constructor(private modalController: ModalController) {
+    
+   }
 
-  constructor() { }
+  ngOnInit() {
+    console.log(this.pratoDia);
+  }
 
-  ngOnInit() {}
-
+  fecharModal() {
+    this.modalController.dismiss();
+  }
 }
