@@ -28,52 +28,51 @@ export class SobremesasPage implements OnInit {
   }
   public sobremesas = [
    {
-     nome: 'X-Salada',
-     valor: 20.00,
-     ingredientes: 'Pão, Alface, Hambúrguer, Tomate, Maionese, Ketchup, Mostarda, Queijo'
+     nome: 'Pudim',
+     valor: 5.00,
    },
    {
-     nome: 'Cachorro Quente',
-     valor: 15.00,
-     ingredientes: 'Pão, Salsicha, Cebola, Tomate, Milho, Ervilha, Batata Palha'
+     nome: 'Sorvete',
+     valor: 5.00,
+     sabores: 'Chocolate, Morango, Uva, Limão'
    },
    {
-     nome: 'Pizza',
-     valor: 35.00,
+     nome: 'Mousse',
+     valor: 5.00,
      ingredientes: '',
-     sabores: '4Queijos, Calabresa, Frango'
+     sabores: 'Maracuja, Morango'
    },
    {
-     nome: 'Calzone',
-     valor: 10.00,
+     nome: 'Gelatina',
+     valor: 5.00,
      ingredientes: '',
-     sabores: '4Queijos, Calabresa, Frango'
+     sabores: 'Abacaxi, Limão, Morango, Uva'
    },
    {
-     nome: 'Pastel',
-     valor: 10.00,
-     ingredientes: '',
-     sabores: '4Queijos, Calabresa, Frango'
+     nome: 'Sagu',
+     valor: 5.00,
+     ingredientes: 'Sagu, Suco de Uva',
+     sabores: ''
    }
   ];
 
-  public getXis() {
+  public getPudim() {
     return this.retorno = this.lancheClicado(this.sobremesas[0]);
   }
 
-  public getCachorro() {
+  public getSorvete() {
     return this.retorno = this.lancheClicado(this.sobremesas[1]);
   }
 
-  public getPizza() {
+  public getMousse() {
     return this.retorno = this.lancheClicado(this.sobremesas[2]);
   }
 
-  public getCalzone() {
+  public getGelatina() {
     return this.retorno = this.lancheClicado(this.sobremesas[3]);
   }
 
-  public getPastel() {
+  public getSagu() {
     return this.retorno = this.lancheClicado(this.sobremesas[4]);
   }
 

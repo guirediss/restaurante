@@ -27,52 +27,54 @@ export class BebidasPage implements OnInit {
   }
   public bebidas = [
    {
-     nome: 'X-Salada',
-     valor: 20.00,
-     ingredientes: 'Pão, Alface, Hambúrguer, Tomate, Maionese, Ketchup, Mostarda, Queijo'
-   },
-   {
-     nome: 'Cachorro Quente',
-     valor: 15.00,
-     ingredientes: 'Pão, Salsicha, Cebola, Tomate, Milho, Ervilha, Batata Palha'
-   },
-   {
-     nome: 'Pizza',
-     valor: 35.00,
+     nome: 'Suco',
+     valor: 5.00,
      ingredientes: '',
-     sabores: '4Queijos, Calabresa, Frango'
+     sabores: 'Abacaxi, Laranja, Limão, Kiwi, Morango'
    },
    {
-     nome: 'Calzone',
+     nome: 'Refrigerantes',
+     valor: 5.00,
+     ingredientes: '',
+     sabores: 'Coca-Cola, Fanta, Kuat, Sprite'
+   },
+   {
+     nome: 'Agua',
+     valor: 5.00,
+     ingredientes: '',
+     sabores: ''
+   },
+   {
+     nome: 'Cerveja',
+     valor: 5.00,
+     ingredientes: '',
+     sabores: 'Brahma, Skol, Heineken'
+   },
+   {
+     nome: 'Vinho',
      valor: 10.00,
      ingredientes: '',
-     sabores: '4Queijos, Calabresa, Frango'
-   },
-   {
-     nome: 'Pastel',
-     valor: 10.00,
-     ingredientes: '',
-     sabores: '4Queijos, Calabresa, Frango'
+     sabores: 'Vinho Tinto Seco, Vinho Tinto Suave, Vinho Branco Seco, Vinho Branco Suave'
    }
   ];
 
-  public getXis() {
+  public getSuco() {
     return this.retorno = this.lancheClicado(this.bebidas[0]);
   }
 
-  public getCachorro() {
+  public getRefrigerantes() {
     return this.retorno = this.lancheClicado(this.bebidas[1]);
   }
 
-  public getPizza() {
+  public getAgua() {
     return this.retorno = this.lancheClicado(this.bebidas[2]);
   }
 
-  public getCalzone() {
+  public getCerveja() {
     return this.retorno = this.lancheClicado(this.bebidas[3]);
   }
 
-  public getPastel() {
+  public getVinho() {
     return this.retorno = this.lancheClicado(this.bebidas[4]);
   }
 
