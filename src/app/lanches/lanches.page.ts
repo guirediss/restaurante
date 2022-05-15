@@ -19,7 +19,7 @@ export class LanchesPage implements OnInit {
     const modal = await this.modalController.create({
       component: InformacoesModalComponent,
       componentProps: {
-        retorno: this.retorno
+        retorno: this.retorno,
       }
     });
 
@@ -29,30 +29,35 @@ export class LanchesPage implements OnInit {
    {
      nome: 'X-Salada',
      valor: 20.00,
-     ingredientes: 'Pão, Alface, Hambúrguer, Tomate, Maionese, Ketchup, Mostarda, Queijo'
+     ingredientes: 'Pão, Alface, Hambúrguer, Tomate, Maionese, Ketchup, Mostarda, Queijo',
+     url: 'assets/img/xissalada.jpg'
    },
    {
      nome: 'Cachorro Quente',
      valor: 15.00,
-     ingredientes: 'Pão, Salsicha, Cebola, Tomate, Milho, Ervilha, Batata Palha'
+     ingredientes: 'Pão, Salsicha, Cebola, Tomate, Milho, Ervilha, Batata Palha',
+     url: 'assets/img/cachorroquente.jpg'
    },
    {
      nome: 'Pizza',
      valor: 35.00,
      ingredientes: '',
-     sabores: '4Queijos, Calabresa, Frango'
+     sabores: '4Queijos, Calabresa, Frango',
+     url: 'assets/img/pizza.jpeg'
    },
    {
      nome: 'Calzone',
      valor: 10.00,
      ingredientes: '',
-     sabores: '4Queijos, Calabresa, Frango'
+     sabores: '4Queijos, Calabresa, Frango',
+     url: 'assets/img/calzone.jpg'
    },
    {
      nome: 'Pastel',
      valor: 10.00,
      ingredientes: '',
-     sabores: '4Queijos, Calabresa, Frango'
+     sabores: '4Queijos, Calabresa, Frango',
+     url: 'assets/img/pastel.jpeg'
    }
   ];
 

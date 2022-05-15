@@ -30,29 +30,34 @@ export class SobremesasPage implements OnInit {
    {
      nome: 'Pudim',
      valor: 5.00,
+     url: 'assets/img/pudim.jpg'
    },
    {
      nome: 'Sorvete',
      valor: 5.00,
-     sabores: 'Chocolate, Morango, Uva, Limão'
+     sabores: 'Chocolate, Morango, Uva, Limão',
+     url: 'assets/img/sorvete.jpg'
    },
    {
      nome: 'Mousse',
      valor: 5.00,
      ingredientes: '',
-     sabores: 'Maracuja, Morango'
+     sabores: 'Maracuja, Morango',
+     url: 'assets/img/mousse.jpg'
    },
    {
      nome: 'Gelatina',
      valor: 5.00,
      ingredientes: '',
-     sabores: 'Abacaxi, Limão, Morango, Uva'
+     sabores: 'Abacaxi, Limão, Morango, Uva',
+     url: 'assets/img/gelatina.jpg'
    },
    {
      nome: 'Sagu',
      valor: 5.00,
      ingredientes: 'Sagu, Suco de Uva',
-     sabores: ''
+     sabores: '',
+     url: 'assets/img/sagu.jpeg'
    }
   ];
 

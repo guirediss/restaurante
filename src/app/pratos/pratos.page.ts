@@ -30,30 +30,35 @@ export class PratosPage implements OnInit {
    {
      nome: 'Batata Frita',
      valor: 15.00,
-     ingredientes: '500g de batata'
+     ingredientes: '500g de batata',
+     url: 'assets/img/batata.jpg'
    },
    {
      nome: 'Polenta Frita',
      valor: 15.00,
-     ingredientes: '500g de polenta'
+     ingredientes: '500g de polenta',
+     url: 'assets/img/polenta.jpg'
    },
    {
      nome: 'Prato feito Carne',
      valor: 20.00,
      ingredientes: 'Arroz, Batata Frita, Feijão, Bife de Carne',
-     sabores: ''
+     sabores: '',
+     url: 'assets/img/pratocarne.jpg'
    },
    {
      nome: 'Prato feito Frango',
      valor: 20.00,
      ingredientes: 'Arroz, Salada, Feijão, Bife de Frango',
-     sabores: ''
+     sabores: '',
+     url: 'assets/img/pratofrango.jpg'
    },
    {
      nome: 'Prato feito Peixe',
      valor: 20.00,
      ingredientes: 'Arroz, Batata Frita, Salada, Peixe a milanesa',
-     sabores: ''
+     sabores: '',
+     url: 'assets/img/peixe.jpg'
    }
   ];
 
