@@ -79,8 +79,4 @@ export class LanchesPage implements OnInit {
   public lancheClicado(lanche) {
     return lanche;
   }
-
-
-
-
 }
