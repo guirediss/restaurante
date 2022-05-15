@@ -7,35 +7,38 @@
 <ion-content>
   <ion-list>
 
-    
-  <ion-item (click)="abrirModal();">
-    <ion-radio id="lanche" button (click)="getId(1)" slot="start" value="1"></ion-radio>
-    <ion-label>{{lanches[0].nome}}: R$ {{lanches[0].valor}}</ion-label>
-    <ion-img src="assets/img/xissalada.jpg"></ion-img>
-  </ion-item>
+    <ion-radio-group>
+        <ion-item>
+          <ion-radio (click)="getXis(); abrirModal()" slot="start"></ion-radio>
+          <ion-label>{{lanches[0].nome}}: R$ {{lanches[0].valor}}</ion-label>
+          <ion-img src="assets/img/xissalada.jpg"></ion-img>
+        </ion-item>
+
+        <ion-item>
+          <ion-radio (click)="getCachorro(); abrirModal()" slot="start"></ion-radio>
+          <ion-label>{{lanches[1].nome}}: R$ {{lanches[1].valor}}</ion-label>
+          <ion-img src="assets/img/cachorroquente.jpg"></ion-img>
+        </ion-item>
 
 
-    <ion-item (click)="abrirModal();">
-      <ion-radio id="lanche2" button (click)="getId(2)" slot="start" value="2"></ion-radio>
-      <ion-label>{{lanches[1].nome}}: R$ {{lanches[1].valor}}</ion-label>
-      <ion-img src="assets/img/cachorroquente.jpg"></ion-img>
-    </ion-item>
+        <ion-item>
+          <ion-radio (click)="getPizza(); abrirModal()" slot="start"></ion-radio>
+          <ion-label>{{lanches[2].nome}}: R$ {{lanches[2].valor}}</ion-label>
+          <ion-img src="assets/img/pizza.jpeg"></ion-img>
+        </ion-item>
 
+        <ion-item>
+          <ion-radio (click)="getCalzone(); abrirModal()" slot="start"></ion-radio>
+          <ion-label>{{lanches[3].nome}}: R$ {{lanches[3].valor}}</ion-label>
+          <ion-img src="assets/img/calzone.jpg"></ion-img>
+        </ion-item>
 
-    <ion-item button (click)="abrirModal()" value="3">
-      <ion-label>{{lanches[2].nome}}: R$ {{lanches[2].valor}}</ion-label>
-      <ion-img src="assets/img/pizza.jpeg"></ion-img>
-    </ion-item>
-
-    <ion-item button (click)="abrirModal()" value="4">
-      <ion-label>{{lanches[3].nome}}: R$ {{lanches[3].valor}}</ion-label>
-      <ion-img src="assets/img/calzone.jpg"></ion-img>
-    </ion-item>
-
-    <ion-item button (click)="abrirModal()" value="5">
-      <ion-label>{{lanches[4].nome}}: R$ {{lanches[4].valor}}</ion-label>
-      <ion-img src="assets/img/pastel.jpeg"></ion-img>
-    </ion-item>
+        <ion-item>
+          <ion-radio (click)="getPastel(); abrirModal()" slot="start"></ion-radio>
+          <ion-label>{{lanches[4].nome}}: R$ {{lanches[4].valor}}</ion-label>
+          <ion-img src="assets/img/pastel.jpeg"></ion-img>
+        </ion-item>
+      </ion-radio-group>
   </ion-list>
 
   <ion-button color="danger" href="/home">

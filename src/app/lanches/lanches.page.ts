@@ -8,9 +8,8 @@ import { InformacoesModalComponent } from '../informacoes-modal/informacoes-moda
   styleUrls: ['./lanches.page.scss'],
 })
 export class LanchesPage implements OnInit {
-
+  public retorno;
   constructor(private modalController: ModalController) {
-
    }
 
   ngOnInit() {
@@ -18,10 +17,13 @@ export class LanchesPage implements OnInit {
 
   async abrirModal() {
     const modal = await this.modalController.create({
-      component: InformacoesModalComponent
+      component: InformacoesModalComponent,
+      componentProps: {
+        retorno: this.retorno
+      }
     });
 
-    await modal.present();
+    return await modal.present();
   }
   public lanches = [
    {
@@ -53,31 +55,32 @@ export class LanchesPage implements OnInit {
      sabores: '4Queijos, Calabresa, Frango'
    }
   ];
-  
-  public getId() {
-    let id = (<HTMLSelectElement>document.getElementById('lanche')).value;
-    
-    if(parseInt(id) == 1){
-      return this.lancheClicado(this.lanches[0]);
-    } 
-    if (parseInt(id) == 2){
-      return this.lancheClicado(this.lanches[1]);
-    }
-    else if (parseInt(id) == 3){
-      return this.lancheClicado(this.lanches[2]);
-    }
-    else if (parseInt(id) == 4){
-      return this.lancheClicado(this.lanches[3]);
-    }
-    else if (parseInt(id) == 5){
-      return this.lancheClicado(this.lanches[4]);
-    }
-    
-    return id;
+
+  public getXis() {
+    return this.retorno = this.lancheClicado(this.lanches[0]);
   }
 
-  public lancheClicado(lanche?): Object {
+  public getCachorro() {
+    return this.retorno = this.lancheClicado(this.lanches[1]);
+  }
+
+  public getPizza() {
+    return this.retorno = this.lancheClicado(this.lanches[2]);
+  }
+
+  public getCalzone() {
+    return this.retorno = this.lancheClicado(this.lanches[3]);
+  }
+
+  public getPastel() {
+    return this.retorno = this.lancheClicado(this.lanches[4]);
+  }
+
+  public lancheClicado(lanche) {
     return lanche;
   }
+
+
+
 
 }

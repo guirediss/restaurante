@@ -8,19 +8,18 @@ import { LanchesPage } from '../lanches/lanches.page';
   styleUrls: ['./informacoes-modal.component.scss'],
 })
 export class InformacoesModalComponent implements OnInit {
-
-  lanches = new LanchesPage(this.modalController);
-  public id = this.lanches.getId();
-  public nomeLanche = this.lanches.lancheClicado(this.id);
+  retorno;
 
   constructor(private modalController: ModalController) {
-    console.log(this.nomeLanche);
-   }
+  }
 
   ngOnInit() {
+    console.log(this.retorno)
   }
 
   fecharModal() {
     this.modalController.dismiss();
   }
+
+  
 }
