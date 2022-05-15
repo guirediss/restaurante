@@ -7,16 +7,19 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
   <div id="container">
       <ion-button href="/lanches"><ion-img src="assets/img/lanches.png"></ion-img></ion-button>
       <ion-button href="/pratos"><ion-img src="assets/img/pratos.png"></ion-img></ion-button>
       <ion-button href="/sobremesas"><ion-img src="assets/img/sobremes.png"></ion-img></ion-button>
       <ion-button href="/bebidas"><ion-img src="assets/img/bebidas.png"></ion-img></ion-button>
+  </div>
+
+  <div id="card">
+    <ion-card>
+      <ion-label>Prato do Dia</ion-label>
+      <h3>OFERTA 25 R$</h3>
+      <ion-button id="pratoBtn" color="danger" (click)="abrirModal()">Ver Detalhes</ion-button>
+    </ion-card>
   </div>
 </ion-content>
